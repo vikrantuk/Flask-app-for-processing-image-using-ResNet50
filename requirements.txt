@@ -3,8 +3,6 @@ Keras-Applications
 Keras-Preprocessing
 numpy
 numpydoc
-pandas
-pandocfilters
 pytest
 pytest-flask
 requests
