@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTANER Vikrant "viku1996@gmail.com"
+MAINTAINER Vikrant "viku1996@gmail.com"
 
 RUN apt-get update -y && \
     apt-get install -y python-pip python-dev
