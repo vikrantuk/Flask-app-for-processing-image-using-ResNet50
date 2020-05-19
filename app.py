@@ -1,9 +1,12 @@
 from flask import Flask
+from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 
 @app.route('/predict', methods=['POST'])
 def create_pred():
-    pass
+    f = request.files['file']
+    f.save(secure_filename(f.filename))
+    return("done")
 
 app.run(port=5000)
