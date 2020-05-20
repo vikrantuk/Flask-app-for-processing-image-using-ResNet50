@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  webapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        buildno: 1
+    image: flak-docker-demo:latest
+    ports:
+      - "5000:5000"
